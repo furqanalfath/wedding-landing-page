@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Roboto+Serif:wght@100&display=swap');
+html { 
+    background: url(../img/image.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.main{
+    width: 100%;
+}
+
+.welcome{
+    width: 50%;
+    margin: auto;
+    color: #eeeeee;
+}
+
+.welcome-text{
+    margin-top:50px;
+    margin-bottom:30px;
+    text-align: center;
+    font-family: 'Allison', cursive;
+    font-size:100px;
+}
+
+.welcome .date {
+    font-size: 20px;
+    font-family: 'Roboto Serif', serif;
+    text-align: center;
+}
+
+#demos{
+    text-align: center;
+    font-size: 20px;
+    margin-top:25px;
+}
+
+#demos span{
+    margin:0 5px;
+}
