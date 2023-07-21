@@ -23,7 +23,7 @@ html, body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 100%;
 }
 
 .welcome-of{
@@ -79,12 +79,14 @@ html, body{
 
 @media only screen and (max-width: 1024px) {
     html, body{
-        font-size:14px;
+        font-size:13px;
     }
     .welcome-name{
         font-size: 30px;
     }
-
+    .welcome-date{
+        font-size: 12px;
+    }
     #timer .ti{
         margin-right: 30px;
     }
