@@ -9,11 +9,16 @@ var days = Math.floor(t / (1000 * 60 * 60 * 24));
 var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
 var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
 var seconds = Math.floor((t % (1000 * 60)) / 1000);
-document.getElementById("demos").innerHTML = "<span class='hari'>" + days + " hari </span>"
-+ "<span class='jam'>" + hours + " jam </span>" + "<span class='menit'>" + + minutes + " menit </span>" 
-+ "<span class='detik'>" +seconds + " detik </span>";
+document.getElementById("timer").innerHTML = "<div class='ti hari'>" + days + "<p>Days</p> </div>"
++ "<div class='ti jam'>" + hours + "<p>Hours</p> </div>" + "<div class='ti menit'>" + + minutes + " <p>Minutes</p> </div>" 
++ "<div class='detik'>" +seconds + " <p>Seconds</p> </div>";
     if (t < 0) {
         clearInterval(x);
         document.getElementById("demos").innerHTML = "EXPIRED";
     }
 }, 1000);
+
+var x = document.getElementById("tes");
+function playAudio() { 
+    x.play(); 
+  } 
