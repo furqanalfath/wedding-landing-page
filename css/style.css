@@ -83,4 +83,8 @@ html, body{
     .welcome-name{
         font-size: 30px;
     }
+
+    #timer .ti{
+        margin-right: 30px;
+    }
 }
