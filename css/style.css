@@ -8,7 +8,7 @@ html, body{
 }
 
 .welcome{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.3)), url("../img/image.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.25)), url("../img/image.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ html, body{
 .welcome-text{
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -48,9 +48,13 @@ html, body{
     color:#ccc;
 }
 
+.welcome-date .dates{
+    color: #eee;
+}
+
 /*** Timer ***/
 #timer{
-    color:#ccc;
+    color:#cecece;
     margin-top:50px;
     display: flex;
     justify-content: center;
@@ -77,16 +81,36 @@ html, body{
    
 }
 
+
+/*** Section Name ***/
+.undangan{
+    font-family: 'Kaisei Tokumin', serif;
+    letter-spacing: 1px;
+    width: 70%;
+    margin:20px auto;
+    font-size: 12px;
+}
+
 @media only screen and (max-width: 1024px) {
     html, body{
         font-size:13px;
     }
+
+    .welcome-text{
+        top:30%;
+    }
+
     .welcome-name{
         font-size: 30px;
     }
     .welcome-date{
         font-size: 12px;
     }
+
+    .welcome-button{
+        margin-top: 0px;
+    }
+
     #timer .ti{
         margin-right: 30px;
     }
