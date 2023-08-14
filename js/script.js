@@ -1,6 +1,8 @@
-//document.getElementById("demo").innerHTML = 
-//decodeURIComponent(window.location.search.substring(1));
+document.getElementById("namaundangan").innerHTML = 
+decodeURIComponent(window.location.search.substring(1));
 
+
+// Countdown timer
 var deadline = new Date("Oct 1, 2023 09:00:00").getTime();
 var x = setInterval(function() {
 var now = new Date().getTime();
@@ -18,7 +20,15 @@ document.getElementById("timer").innerHTML = "<div class='ti hari'>" + days + "<
     }
 }, 1000);
 
-var x = document.getElementById("tes");
+
+
+
+// Play Audio
 function playAudio() { 
+    const x = document.getElementById("tes");
+    const overlay = document.getElementById("undangan")
     x.play(); 
+    x.loop = true;
+    overlay.classList.add("anotherclass");
+    //classes.add("hide-overlay");
   } 

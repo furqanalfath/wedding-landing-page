@@ -45,7 +45,7 @@ html, body{
 
 .welcome-date{
     letter-spacing: 5px;
-    color:#ccc;
+    color:#dedede;
 }
 
 .welcome-date .dates{
@@ -54,7 +54,7 @@ html, body{
 
 /*** Timer ***/
 #timer{
-    color:#cecece;
+    color:#dedede;
     margin-top:50px;
     display: flex;
     justify-content: center;
@@ -82,14 +82,61 @@ html, body{
 }
 
 
-/*** Section Name ***/
-.undangan{
+/*** Welcome Page***/
+#undangan{
     font-family: 'Kaisei Tokumin', serif;
-    letter-spacing: 1px;
-    width: 70%;
-    margin:20px auto;
-    font-size: 12px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
+
+.modal{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.578), rgba(0, 0, 0, 0.55)), url("../img/image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    color: #ccc;
+}
+
+.modal-text{
+        text-align: center;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+}
+
+.modal button{
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: none;
+    color:#ccc;
+    border: none;
+    letter-spacing: 2px;
+    
+}
+
+#namaundangan {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+
+.anotherclass {
+    transform: translateY(200%);
+    transition: 0.4s ease-in-out;
+  }
 
 @media only screen and (max-width: 1024px) {
     html, body{

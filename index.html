@@ -4,6 +4,7 @@
         <title>Wedding Arini & Furqan</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/e9cec94fa5.js" crossorigin="anonymous"></script>
     </head>
 <body>
     <div class="welcome">
@@ -18,23 +19,21 @@
             </audio>-->
         </div>
     </div>
-    <div class="undangan"> 
-        Tanpa mengurangi rasa hormat, dengan undangan digital ini kami ingin mengundang bapak/ibu ... ke acara resepsi pernikahan kami.
-        <br/>
-        <br/>
-        Tanggal: 01 October 2023
-        <br/>
-        Pukul : 11:00 - 13:00 WIB
-        <br/>
-        Lokasi : Gedung Pernikahan Papandayan Tambun, Kab. Bekasi
-        <br/>
-        Maps: <a href="https://goo.gl/maps/N3GXeWQEZjGwuwdH8">Klik Disini</a>
-
-        <br/>
-        <br/>
-        Kami yang berbahagia,
-        <br/>
-        Arini Larasati dan Muhammad Furqan Alfath
+    <div id="undangan"> 
+        <div class="modal">
+            <div class="modal-text">
+                Kepada Yth: </br>
+                <div id="namaundangan"></div>
+                Tanpa Mengurangi Rasa Hormat,</br> Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami
+                <i class="fa-solid fa-rings-wedding"></i>
+            
+            </div>
+            <button onclick="playAudio()" class="welcome-button"><i class="fa-regular fa-envelope fa-bounce"></i> Buka Undangan</button>
+        </div>
+        
+        <audio id="tes" autoplay >
+            <source  src = "music/westlife.mp3" type="audio/mpeg"/>
+            </audio>
     </div>   
    
 
